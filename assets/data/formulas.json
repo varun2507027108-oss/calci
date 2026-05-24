@@ -1,0 +1,17 @@
+{
+  "formulas": {
+    "physics": [
+      {"name": "Newton's Second Law", "formula": "F = ma", "variables": ["F: Force (N)", "m: mass (kg)", "a: acceleration (m/s²)"]},
+      {"name": "Kinetic Energy", "formula": "KE = ½mv²", "variables": ["KE: kinetic energy (J)", "m: mass (kg)", "v: velocity (m/s)"]},
+      {"name": "Gravitational Force", "formula": "F = Gm₁m₂/r²", "variables": ["G: gravitational constant", "m: masses", "r: distance"]}
+    ],
+    "chemistry": [
+      {"name": "Ideal Gas Law", "formula": "PV = nRT", "variables": ["P: pressure", "V: volume", "n: moles", "R: gas constant", "T: temperature"]},
+      {"name": "pH", "formula": "pH = -log[H⁺]", "variables": ["[H⁺]: hydrogen ion concentration"]}
+    ],
+    "math": [
+      {"name": "Quadratic Formula", "formula": "x = (-b ± √(b²-4ac)) / 2a", "variables": ["a, b, c: coefficients"]},
+      {"name": "Pythagorean Theorem", "formula": "a² + b² = c²", "variables": ["a, b: legs", "c: hypotenuse"]}
+    ]
+  }
+}
