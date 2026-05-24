@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 /// Calcuon typography system.
 ///
@@ -8,30 +9,27 @@ import 'package:flutter/material.dart';
 abstract final class AppTypography {
   // ─── FONT FAMILIES ──────────────────────────────────────────
 
-  static const String displayFont = 'SpaceGrotesk';
-  static const String bodyFont = 'DMSans';
-  static const String monoFont = 'JetBrainsMono';
+  static final String displayFont = GoogleFonts.spaceGrotesk().fontFamily!;
+  static final String bodyFont = GoogleFonts.dmSans().fontFamily!;
+  static final String monoFont = GoogleFonts.jetbrainsMono().fontFamily!;
 
   // ─── DISPLAY STYLES (Results, Headers) ──────────────────────
 
-  static const TextStyle displayLarge = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle displayLarge = GoogleFonts.spaceGrotesk(
     fontSize: 48,
     fontWeight: FontWeight.w300,
     height: 1.1,
     letterSpacing: -1.5,
   );
 
-  static const TextStyle displayMedium = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle displayMedium = GoogleFonts.spaceGrotesk(
     fontSize: 36,
     fontWeight: FontWeight.w300,
     height: 1.15,
     letterSpacing: -1.0,
   );
 
-  static const TextStyle displaySmall = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle displaySmall = GoogleFonts.spaceGrotesk(
     fontSize: 28,
     fontWeight: FontWeight.w400,
     height: 1.2,
@@ -40,24 +38,21 @@ abstract final class AppTypography {
 
   // ─── HEADING STYLES ─────────────────────────────────────────
 
-  static const TextStyle headlineLarge = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle headlineLarge = GoogleFonts.spaceGrotesk(
     fontSize: 24,
     fontWeight: FontWeight.w500,
     height: 1.25,
     letterSpacing: -0.3,
   );
 
-  static const TextStyle headlineMedium = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle headlineMedium = GoogleFonts.spaceGrotesk(
     fontSize: 20,
     fontWeight: FontWeight.w500,
     height: 1.3,
     letterSpacing: -0.2,
   );
 
-  static const TextStyle headlineSmall = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle headlineSmall = GoogleFonts.spaceGrotesk(
     fontSize: 18,
     fontWeight: FontWeight.w500,
     height: 1.3,
@@ -65,22 +60,19 @@ abstract final class AppTypography {
 
   // ─── BODY STYLES ────────────────────────────────────────────
 
-  static const TextStyle bodyLarge = TextStyle(
-    fontFamily: bodyFont,
+  static final TextStyle bodyLarge = GoogleFonts.dmSans(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     height: 1.5,
   );
 
-  static const TextStyle bodyMedium = TextStyle(
-    fontFamily: bodyFont,
+  static final TextStyle bodyMedium = GoogleFonts.dmSans(
     fontSize: 14,
     fontWeight: FontWeight.w400,
     height: 1.45,
   );
 
-  static const TextStyle bodySmall = TextStyle(
-    fontFamily: bodyFont,
+  static final TextStyle bodySmall = GoogleFonts.dmSans(
     fontSize: 12,
     fontWeight: FontWeight.w400,
     height: 1.4,
@@ -88,24 +80,21 @@ abstract final class AppTypography {
 
   // ─── LABEL STYLES (Buttons, Chips) ──────────────────────────
 
-  static const TextStyle labelLarge = TextStyle(
-    fontFamily: bodyFont,
+  static final TextStyle labelLarge = GoogleFonts.dmSans(
     fontSize: 14,
     fontWeight: FontWeight.w500,
     height: 1.4,
     letterSpacing: 0.1,
   );
 
-  static const TextStyle labelMedium = TextStyle(
-    fontFamily: bodyFont,
+  static final TextStyle labelMedium = GoogleFonts.dmSans(
     fontSize: 12,
     fontWeight: FontWeight.w500,
     height: 1.35,
     letterSpacing: 0.2,
   );
 
-  static const TextStyle labelSmall = TextStyle(
-    fontFamily: bodyFont,
+  static final TextStyle labelSmall = GoogleFonts.dmSans(
     fontSize: 10,
     fontWeight: FontWeight.w500,
     height: 1.3,
@@ -114,23 +103,20 @@ abstract final class AppTypography {
 
   // ─── MONO STYLES (Expressions, Code) ────────────────────────
 
-  static const TextStyle monoLarge = TextStyle(
-    fontFamily: monoFont,
+  static final TextStyle monoLarge = GoogleFonts.jetbrainsMono(
     fontSize: 24,
     fontWeight: FontWeight.w400,
     height: 1.3,
     letterSpacing: -0.5,
   );
 
-  static const TextStyle monoMedium = TextStyle(
-    fontFamily: monoFont,
+  static final TextStyle monoMedium = GoogleFonts.jetbrainsMono(
     fontSize: 18,
     fontWeight: FontWeight.w400,
     height: 1.35,
   );
 
-  static const TextStyle monoSmall = TextStyle(
-    fontFamily: monoFont,
+  static final TextStyle monoSmall = GoogleFonts.jetbrainsMono(
     fontSize: 14,
     fontWeight: FontWeight.w400,
     height: 1.4,
@@ -139,8 +125,7 @@ abstract final class AppTypography {
   // ─── CALCULATOR-SPECIFIC ────────────────────────────────────
 
   /// Main result display — large, light weight
-  static const TextStyle resultDisplay = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle resultDisplay = GoogleFonts.spaceGrotesk(
     fontSize: 56,
     fontWeight: FontWeight.w300,
     height: 1.0,
@@ -148,8 +133,7 @@ abstract final class AppTypography {
   );
 
   /// Expression being typed
-  static const TextStyle expressionDisplay = TextStyle(
-    fontFamily: monoFont,
+  static final TextStyle expressionDisplay = GoogleFonts.jetbrainsMono(
     fontSize: 20,
     fontWeight: FontWeight.w400,
     height: 1.3,
@@ -157,24 +141,21 @@ abstract final class AppTypography {
   );
 
   /// Calculator button text
-  static const TextStyle buttonText = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle buttonText = GoogleFonts.spaceGrotesk(
     fontSize: 24,
     fontWeight: FontWeight.w400,
     height: 1.0,
   );
 
   /// Small calculator button (scientific)
-  static const TextStyle buttonTextSmall = TextStyle(
-    fontFamily: bodyFont,
+  static final TextStyle buttonTextSmall = GoogleFonts.dmSans(
     fontSize: 14,
     fontWeight: FontWeight.w500,
     height: 1.0,
   );
 
   /// Operator button text
-  static const TextStyle operatorText = TextStyle(
-    fontFamily: displayFont,
+  static final TextStyle operatorText = GoogleFonts.spaceGrotesk(
     fontSize: 28,
     fontWeight: FontWeight.w300,
     height: 1.0,

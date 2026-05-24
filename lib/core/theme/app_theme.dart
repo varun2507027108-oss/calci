@@ -30,7 +30,7 @@ abstract final class AppTheme {
           surfaceContainerHighest: AppColors.darkSurfaceElevated,
         ),
         textTheme: _buildTextTheme(AppColors.darkTextPrimary, AppColors.darkTextSecondary),
-        appBarTheme: const AppBarTheme(
+        appBarTheme: AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
           scrolledUnderElevation: 0,
@@ -41,7 +41,7 @@ abstract final class AppTheme {
             fontWeight: FontWeight.w500,
             color: AppColors.darkTextPrimary,
           ),
-          iconTheme: IconThemeData(color: AppColors.darkTextSecondary),
+          iconTheme: const IconThemeData(color: AppColors.darkTextSecondary),
         ),
         cardTheme: CardThemeData(
           color: AppColors.darkSurfaceElevated,
@@ -51,7 +51,7 @@ abstract final class AppTheme {
             side: const BorderSide(color: AppColors.darkBorderSubtle, width: 0.5),
           ),
         ),
-        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: Colors.transparent,
           elevation: 0,
           selectedItemColor: AppColors.accentAmber,
@@ -89,7 +89,7 @@ abstract final class AppTheme {
             borderRadius: BorderRadius.circular(AppRadius.md),
             borderSide: const BorderSide(color: AppColors.accentAmber, width: 1.0),
           ),
-          hintStyle: const TextStyle(
+          hintStyle: TextStyle(
             fontFamily: AppTypography.bodyFont,
             color: AppColors.darkTextTertiary,
           ),
@@ -130,7 +130,7 @@ abstract final class AppTheme {
           surfaceContainerHighest: AppColors.lightSurfaceElevated,
         ),
         textTheme: _buildTextTheme(AppColors.lightTextPrimary, AppColors.lightTextSecondary),
-        appBarTheme: const AppBarTheme(
+        appBarTheme: AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
           scrolledUnderElevation: 0,
@@ -141,7 +141,7 @@ abstract final class AppTheme {
             fontWeight: FontWeight.w500,
             color: AppColors.lightTextPrimary,
           ),
-          iconTheme: IconThemeData(color: AppColors.lightTextSecondary),
+          iconTheme: const IconThemeData(color: AppColors.lightTextSecondary),
         ),
         cardTheme: CardThemeData(
           color: AppColors.lightSurfaceElevated,
@@ -151,7 +151,7 @@ abstract final class AppTheme {
             side: const BorderSide(color: AppColors.lightBorderSubtle, width: 0.5),
           ),
         ),
-        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: Colors.transparent,
           elevation: 0,
           selectedItemColor: AppColors.accentAmberDark,
